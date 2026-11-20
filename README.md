@@ -28,3 +28,10 @@ The program prints each document as it indexes it. It then asks for a term, list
 ## Example: `whale`
 
 Returns chapters 1, 2, 3, 7 and 9. Chapter 6 only has "whale-lance", which the processor turns into the single term `whalelance`, so it is correctly left out.
+
+## Other corpora
+
+These datasets are included so the whole group has them. Assignment 4 doesn't use them.
+
+- `corpora/all-nps-sites-extracted/`: 36,803 JSON documents from National Park Service web pages
+- `corpora/mlb-articles-4000/`: 4,000 MLB news articles as JSON, split across subfolders `1`–`4`
