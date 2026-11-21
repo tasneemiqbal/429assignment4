@@ -40,7 +40,8 @@ class DirectoryCorpus:
         return self._documents[doc_id]
 
     def _read_documents(self) -> list[Document]:
-        files = list(Path(self.corpus_path).glob("*"))
+        # Files are now read in sorted order, so document IDs are the same on every machine.
+        files = sorted(Path(self.corpus_path).glob("*"))
         results = {}
         next_id = 0
         for f in files:
